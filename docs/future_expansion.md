@@ -1,61 +1,58 @@
+
 # Future Expansion Roadmap
 
-This home lab environment is continuously evolving. Planned improvements include:
+This home lab is an ongoing personal engineering project. The following improvements are under consideration as opportunities to explore additional infrastructure and networking concepts.
 
----
+## Advanced Network Segmentation
 
-## Network Segmentation (VLAN Implementation)
+The current environment already uses a dedicated home-lab VLAN.
 
-Future iterations will explore VLAN segmentation to:
+Future improvements may include:
 
-- Separate media, experimentation, and infrastructure traffic
-- Improve security boundaries between services
-- Reduce broadcast domain congestion
+- Creating additional VLANs for management, experimentation, and externally accessible services.
+- Implementing more granular firewall and inter-VLAN routing policies.
+- Documenting network access rules and segmentation behavior.
 
-This will provide hands-on experience with managed switch configuration and structured network segmentation.
+## Monitoring and Observability
 
----
+Potential improvements include:
 
-## Centralized Reverse Proxy
+- Centralized CPU, memory, and storage monitoring.
+- Container uptime and service availability dashboards.
+- Automated alerts for abnormal resource utilization.
+- Historical network and system performance logging.
 
-Implementation of a reverse proxy (e.g., Nginx or Traefik) to:
+## Backup and Recovery
 
-- Consolidate service routing
-- Simplify SSL certificate management
-- Improve external access control
+Future work may involve:
 
----
+- Developing automated backup schedules.
+- Implementing additional off-site or external backup storage.
+- Testing recovery procedures for important applications and configurations.
+- Exploring ZFS snapshots and recovery workflows.
 
-## Monitoring & Observability
+## Automated Container Deployment
 
-Future additions may include:
+Explore Docker Compose and version-controlled deployment configurations to improve:
 
-- Container resource monitoring dashboards
-- Uptime tracking
-- Centralized logging aggregation
+- Deployment consistency.
+- Service recovery and reconfiguration.
+- Configuration documentation.
+- Reproducibility across operating environments.
 
-This would improve operational visibility and incident response.
+## Distributed Computing
 
----
+Although the home lab currently contains two physical nodes, compute workloads are primarily handled by the ZimaOS server.
 
-## Backup & Snapshot Strategy Enhancement
+Future experimentation may involve:
 
-Expanding backup procedures to include:
+- Adding an additional compute node.
+- Distributing selected workloads across multiple hosts.
+- Exploring load balancing and service availability.
+- Testing container orchestration and recovery behaviors.
 
-- Automated scheduled backups
-- VM snapshot rotation
-- External redundancy options
+## Continuous Documentation
 
-This strengthens system resilience and recovery capability.
+Maintain updated architecture diagrams, configuration notes, and sanitized screenshots as the infrastructure evolves.
 
----
-
-## Multi-Node Scaling (Long-Term Goal)
-
-Transitioning from single-node architecture to a multi-node cluster for:
-
-- High availability experimentation
-- Load balancing studies
-- Distributed service deployment
-
-This would simulate small-scale production infrastructure.
+Completed features and proposed improvements will continue to be documented separately.
